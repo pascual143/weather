@@ -1,0 +1,91 @@
+@import '~mapbox-gl/dist/mapbox-gl.css';
+$popUpColor: rgba(68,68,68,0.85);
+$popUpEdge: #FFF;
+$mapTempColor: #222;
+$panelColor:#EEE;
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $panelColor;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+main {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.map {
+  width: 80vw;
+  height: 100vh;
+}
+
+
+aside {
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5vh;
+  background-color: $panelColor;
+  width: 20vw;
+  height: 100vh;
+
+  .place{
+    font-size: 3vh;
+  }
+  .temp{
+    font-size: 5.5vh;
+  }
+  .tempMinMax{
+    font-size: 2.5vh;
+  }
+  .weatherIcon{
+    height: 175px;
+  }
+}
+
+div {
+  color: $mapTempColor;
+}
+
+.custom-marker {
+  color:$mapTempColor;
+  height: 7vh;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: opacity 1s;
+  transition: height .2s;
+}
+
+.custom-marker:hover {
+  height: 12vh;
+  opacity: 1;
+}
+
+
+.mapboxgl-popup-tip {
+
+}
+
+.mapboxgl-popup-content {
+
+  text-align: center;
+  color: $mapTempColor;
+  border-radius: 20%;
+  background-color: $popUpEdge;
+  border: 0px solid $popUpEdge;
+  margin: 0px;
+  font-size: 11px;
+  font-weight: 200;
+  line-height: 3px;
+
+}
