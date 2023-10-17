@@ -1,5 +1,5 @@
 ## WEAHTER APP
-## _watch the weather in real live_
+## _Watch the Weather in Real Live_
 
 
 - ✨ WEATHER APP ✨
