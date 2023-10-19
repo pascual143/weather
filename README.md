@@ -15,7 +15,7 @@
 ## Tech
 
 
-- FETCH API, mapbox
+- FETCH API, MAPBOX
 - JavaScript
 - AXIOS
 - HTML
